@@ -1,0 +1,42 @@
+# Данные (сырые и производные)
+data/
+*.npy
+*.npz
+training_data_with_weights.csv
+rm -f .gitignore
+cat > .gitignore << 'EOF'
+# Данные (сырые и производные)
+data/
+*.npy
+*.npz
+training_data_with_weights.csv
+
+# Модели и веса (опционально - раскомментируйте, если НЕ хотите загружать)
+# *.pth
+# *.pkl
+# *.joblib
+
+# Виртуальное окружение
+venv/
+env/
+.env/
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter временные файлы
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# Системные файлы macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
